@@ -255,6 +255,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.update();
 	      this.on(['scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'], this.onScroll);
 	      this.on(['resize', 'pageshow', 'load'], this.onResize);
+	      var eventsContainer = $.find('#event-container');
+	      eventsContainer.on(['scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'], this.onScroll);
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
