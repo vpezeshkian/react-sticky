@@ -37,7 +37,7 @@ export default class Sticky extends React.Component {
     this.on(['scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'], this.onScroll);
     this.on(['resize', 'pageshow', 'load'], this.onResize);
     const eventsContainer = $.find('#event-container');
-    eventsContainer.on(['scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'], this.onScroll);
+    $(eventsContainer).on(['scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'], this.onScroll);
   }
 
   componentWillReceiveProps() {
